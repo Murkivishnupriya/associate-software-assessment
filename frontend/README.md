@@ -1,70 +1,163 @@
-# Getting Started with Create React App
+# Associate Software Engineer (Python + React) – Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Developer:** Vishnupriya Murki  
+**Email:** mvishnupriyaaa@gmail.com  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Overview
 
-### `npm start`
+This repository contains my submission for the **Associate Software Engineer (Python + React)** assessment.  
+It includes both backend and frontend implementations based on the open-source **Flask + React** template provided in the instructions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The goal of this assessment is to demonstrate strong engineering practices, code structure, and understanding of full-stack development using **FastAPI (Python)** and **React.js**.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+##  Tasks Completed
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Task 1 – Backend APIs**
+- Implemented CRUD APIs for managing **Tasks** and **Comments**.
+- Followed RESTful conventions using **FastAPI** and **SQLAlchemy**.
+- Added automated tests using **pytest** and **httpx**.
+- Implemented SQLite as a lightweight relational database.
+- Added **CORS** middleware to enable frontend communication.
 
-### `npm run build`
+**Endpoints include:**
+| Method   | Endpoint               |       Description            |
+|----------|------------------------|----------------------------=-|
+| `POST`   | `/tasks/`              | Create a new task            |
+| `GET`    | `/tasks/`              | Get all tasks                |
+| `GET`    | `/tasks/{task_id}`     | Get a specific task          |
+| `PUT`    | `/tasks/{task_id}`     | Update a task                |
+| `DELETE` | `/tasks/{task_id}`     | Delete a task                |
+| `POST`   | `/tasks/{task_id}/comments` | Add a comment to a task |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Tests Executed:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+pytest -v
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Task 2 – Frontend Interface
 
-### `npm run eject`
+Built using React.js and Axios.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Implemented features to:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Add new tasks
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+View all tasks
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Delete existing tasks
 
-## Learn More
+Integrated frontend with backend APIs.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Styled with clean, minimal UI following modern React standards.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Commands:
 
-### Code Splitting
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Frontend runs on http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Backend runs on http://127.0.0.1:8000
 
-### Making a Progressive Web App
+##  Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Backend:
 
-### Advanced Configuration
+FastAPI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+SQLAlchemy
 
-### Deployment
+SQLite
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Pydantic
 
-### `npm run build` fails to minify
+Uvicorn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pytest
+
+Frontend:
+
+React.js (Vite)
+
+Axios
+
+HTML / CSS / JS
+
+##  Testing & Validation
+
+Verified all CRUD operations using FastAPI’s Swagger UI (/docs).
+
+Confirmed successful integration between frontend and backend.
+
+Automated test suite (pytest) validates comment creation flow.
+
+##  Video Walkthrough
+
+A short demonstration video showcases:
+
+Running backend and frontend locally.
+
+Using the FastAPI Swagger UI to test APIs.
+
+Executing automated tests.
+
+Using the React UI to add, view, and delete tasks.
+
+Overview of both Pull Requests.
+
+##  Pull Requests
+Task	Description	PR Link
+Task 1	FastAPI CRUD APIs for Tasks and Comments	Backend PR
+
+Task 2	React Task Manager Frontend	Frontend PR
+ Setup Instructions (Windows)
+1️)  Clone Repository
+git clone https://github.com/Murkivishnupriya/associate-software-assessment.git
+cd associate-software-assessment
+
+2️) Backend Setup
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+3) Frontend Setup
+cd frontend
+npm install
+npm start
+
+##  Key Design Choices
+
+Chose FastAPI for its simplicity, async support, and automatic documentation.
+
+Added modular structure (models, schemas, crud, tests) for maintainability.
+
+Used Axios in React for consistent API handling.
+
+Emphasized clarity, code readability, and clean commit history.
+
+##  Author
+
+Vishnupriya Murki
+ mvishnupriyaaa@gmail.com
+
+ GitHub Profile
+
+ Summary
+
+This submission demonstrates:
+
+Full-stack development with Python FastAPI and React.js
+
+Proper software engineering practices
+
+Automated testing
+
+Clean, maintainable architecture
+
+“Simplicity and reliability are at the core of great software.”
