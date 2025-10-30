@@ -112,8 +112,11 @@ Overview of both Pull Requests.
 ##  Pull Requests
 Task	Description	PR Link
 Task 1	FastAPI CRUD APIs for Tasks and Comments	Backend PR
+PR #1 – Backend Task (FastAPI CRUD APIs for Tasks and Comments): https://github.com/Murkivishnupriya/associate-software-assessment/pull/1
 
 Task 2	React Task Manager Frontend	Frontend PR
+PR #2 – Frontend Task (React Task Manager UI connected to FastAPI backend): https://github.com/Murkivishnupriya/associate-software-assessment/pull/2
+
  Setup Instructions (Windows)
 1️)  Clone Repository
 git clone https://github.com/Murkivishnupriya/associate-software-assessment.git
